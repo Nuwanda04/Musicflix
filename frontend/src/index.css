@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --sky-blue: #a8d8ea;
+  --cloud-white: #fef9f3;
+  --grass-green: #8fb996;
+  --sunset-orange: #f4a261;
+  --earth-brown: #8b7355;
+  --soft-pink: #ffc9c9;
+  --deep-blue: #5b8a9c;
+  --forest-green: #6b8e6f;
+  --warm-cream: #faf3e0;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.15);
+
+  font-family: "Quicksand", "Comfortaa", system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #4a4a4a;
+  background: linear-gradient(180deg, #a8d8ea 0%, #fef9f3 50%, #ffc9c9 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--deep-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--sunset-orange);
+}
+
+html {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #a8d8ea 0%, #fef9f3 50%, #ffc9c9 100%);
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comfortaa", "Quicksand", sans-serif;
+  color: var(--earth-brown);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+button {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--cloud-white);
+  color: var(--earth-brown);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--shadow-hover);
+  background-color: var(--warm-cream);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid var(--grass-green);
+  outline-offset: 2px;
+}
+
+input {
+  font-family: "Quicksand", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cloud-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grass-green);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--forest-green);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}

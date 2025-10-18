@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem 1.5rem;
+  border: 3px solid var(--grass-green);
+  border-radius: 25px;
+  font-size: 1.1rem;
+  background: white;
+  color: var(--earth-brown);
+  font-weight: 500;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--sunset-orange);
+  box-shadow: 0 4px 12px rgba(244, 162, 97, 0.3);
+}
+
+@media (max-width: 768px) {
+  .input {
+    max-width: 100%;
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+  }
+}
